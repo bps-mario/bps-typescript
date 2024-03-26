@@ -125,8 +125,6 @@ console.log(myState.state)
 
 
 
-
-
 //questions to think about
 // when compling typescript to javascript how to get javascript to not get uploaded to github
 //what is difference between object and array
