@@ -28,12 +28,13 @@ let myNextVal: number = addOrConcat(2,2,'concat') as number;
 // althought typescript will still check asserstions when it can
 // 10 as string
 
-//forced casting or double casting
+//forced casting or double casting unknow is kinda like any but you cant use unknown type anywhere unless you use it like belowj
 (10 as unknown) as string
 
 //The DOM
-const img = document.querySelector('img') as HTMLImageElement
+const img = document.querySelector('img')!
 const myImg = document.getElementById('#img')! as HTMLImageElement
+const nextImg = <HTMLImageElement>document.getElementById('#img')
 
 img.src
 myImg.src
