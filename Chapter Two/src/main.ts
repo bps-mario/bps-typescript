@@ -21,3 +21,4 @@ let postId: string | number;
 let isActive: number | boolean | string; // not limited to only two data types
 
 let re: RegExp = /\w+/g
+

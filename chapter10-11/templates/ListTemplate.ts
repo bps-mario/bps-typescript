@@ -10,12 +10,14 @@ export default class ListTemplate implements DOMList{
 
     ul: HTMLUListElement
 
-    private constructor(private _ul: HTMLUListElement){
+    static instance: ListTemplate = new ListTemplate();
+
+    private constructor(){
         this.ul = document.getElementById("listItems") as HTMLUListElement
     }
 
     clear(): void {
-        this._ul.innerHTML = " "
+        this.ul.innerHTML = " "
     }
 
     render(fulllist: FullList): void {
@@ -46,6 +48,13 @@ export default class ListTemplate implements DOMList{
             button.className = 'button'
             button.textContent = 'X'
             li.append(button)
+
+            button.addEventListener('click', () =>{
+                fulllist.removeItem(item.id)
+                this.render(fulllist) 
+            })
+
+            this.ul.append(li)
         })
     }
 }

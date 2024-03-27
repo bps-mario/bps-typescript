@@ -129,3 +129,15 @@ console.log(myState.state)
 // when compling typescript to javascript how to get javascript to not get uploaded to github
 //what is difference between object and array
 //
+
+//look up what serilization and how the client will use it
+//clients will seralize the payload
+// look up ORM
+
+
+/// link github 
+// create dockerization of website
+// install nginx reverse proxy docker image of the website
+// run locally
+// change port no 3000 or 8080
+//
