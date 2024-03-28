@@ -1,3 +1,4 @@
+"use client"
 import Nav from "./Nav"
 import useCart from "../hooks/useCart"
 
