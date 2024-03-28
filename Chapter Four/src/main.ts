@@ -123,3 +123,8 @@ const numberOrString = (value: number | string): string => {
     if (isNumber(value)) return 'number'
     return createError('This should never happen!')
 }
+
+/*
+aws certified dev asscoiate course
+
+*/
