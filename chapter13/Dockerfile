@@ -29,7 +29,7 @@ RUN rm /etc/nginx/conf.d/*
 # *.conf files in conf.d/ dir get included in main config
 COPY ./nginx/default.conf /etc/nginx/conf.d/
 
-COPY --from=build-stage /app/.next /usr/share/nginx/html
+COPY --from=build-stage /app/out /usr/share/nginx/html
 
 # Expose the listening port
 EXPOSE 90
