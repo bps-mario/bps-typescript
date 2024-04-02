@@ -7,13 +7,11 @@ import '../styles/globals.css'; // Import global styles here
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ProductsProvider>
-      <CartProvider>
+
         <RootLayout>
           <Component {...pageProps} />
         </RootLayout>
-      </CartProvider>
-    </ProductsProvider>
+
   );
 }
 
